@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Consultorio Castillo | Inicio</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <link rel="icon" href="img/logo-icon.ico">
+</head>
+<body>
+    <header>
+        <div class="logo">
+          <!-- Aquí puedes colocar el código HTML para tu logo -->
+          <a href="index.html"><img src="img\logo.png" alt="Logo de la página"></a>
+        </div>
+        <nav class="options">
+          <a href="index.html">Inicio</a>
+          <a href="#">Acerca de</a>
+        </nav>
+        <div>
+        <a href="Iniciar-sesion.html">          <button class="btn" onclick="openModal('login')">Iniciar sesión</button>
+        </a>
+        </div>
+      </header>
+      
+  <div class="modal-content1" style="border: none; display: flex; margin-top: 20px; justify-content: center; align-items: center; height: 100%; margin-top: 10rem ;">
+    <div class="panel panel-default" style="max-width: 500px; margin-block: 2.5rem; position: relative;">
+      <span class="close-1" onclick="closeModal('login')" style="position: relative; bottom: 3rem;left: 6rem;">&times;</span>
+      <h2 style="text-align: center; color: rgb(31, 78, 121); font-size: 35px !important; position:relative; left: 15px;">Iniciar Sesión</h2>
+      <form action="#" method="post">
+        <div class="form-group" style="margin-block: 10px;">
+          <label for="username">Usuario:</label>
+          <input type="text" id="username" name="username" required>
+        </div>
+        <div class="form-group">
+          <label for="password">Contraseña:</label>
+          <input type="password" id="password" name="password" required>
+        </div>
+        <div class="form-group">
+          <h2></h2>
+          <button type="submit"><a href="sesion-iniciada-index.html" style="color: white;">Iniciar sesión</a></button>
+        </div>
+      </form>
+      <p style="display: flex; justify-content: center; font-size: 18px;font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">¿Aún no tiene una cuenta? <a href="Registro.html" style="text-decoration: underline; line">Regístrate</a></p>
+              </div>
+  </div>
+     
+  
+
+
+    
+
+
+
+  <footer style="margin-bottom: -10px;">
+    <div class="footer-container">
+      <div class="footer-logo">
+        <!-- Código HTML para el logo del footer -->
+      </div>
+      <nav class="footer-links">
+        <a href="#">Inicio</a>
+        <a href="#">Acerca de</a>
+        <a href="#">Contacto</a>
+      </nav>
+      <div class="footer-social">
+      </div>
+    </div>
+  </footer>
+  
+
+
+</body>
+</html>

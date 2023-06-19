@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Consultorio Castillo | Realizar Pago</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <link rel="icon" href="img/logo-icon.ico">
+</head>
+<body>
+    <header>
+        <div class="logo">
+          <!-- Aquí puedes colocar el código HTML para tu logo -->
+          <a href="sesion-iniciada-index.html"><img src="img\logo.png" alt="Logo de la página"></a>
+        </div>
+        <nav class="options">
+          <a href="index.html">Inicio</a>
+          <a href="#">Acerca de</a>
+        </nav>
+        <div class="profile-menu">
+          <div class="profile-logo">
+            <img src="img/user-profile.png" alt="Logo de perfil" class="profile-image">
+            <div class="dropdown-menu">
+              <ul>
+                <li><a href="index.html">Cerrar sesión</a></li>
+                <li><a href="#">Editar perfil</a></li>
+              </ul>
+            </div>
+            <div class="dropdown-trigger"></div>
+          </div>
+        </div>
+      </header>
+      
+  <div class="modal-content1" style="border: none; display: flex; margin-top: 20px; justify-content: center; align-items: center; height: 100%; margin-block: ;">
+    <div class="panel panel-default" style="max-width: 500px;">
+      <div class="panel-heading">
+        <h3 class="panel-title">Selecciona el método de pago</h3>
+      </div>
+      <div class="panel-body">
+        <form>
+          <div class="form-group">
+            <label for="pasarela" style="margin-bottom: 1rem; ">Pasarela de Pago</label>
+            <div class="card-images">
+              <img src="img/target-bcp.jpg" alt="Tarjeta 1" class="card-image" style="width: 100px;">
+              <img src="img/targets-visa-mc.png" alt="Tarjeta 1" class="card-image" style="width: 125px;">
+ 
+            </div>
+            <select class="form-control" id="pasarela" name="pasarela" style="margin-block: 1rem;">
+              <option value="">Selecciona una pasarela de pago</option>
+              <option value="paypal">Visa</option>
+              <option value="stripe">MasterCard</option>
+              <option value="mercadopago">BCP</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="numero_tarjeta">Número de Tarjeta</label>
+            <input type="text" class="form-control" id="numero_tarjeta" name="numero_tarjeta" placeholder="Ingrese el número de tarjeta">
+          </div>
+          <div class="form-group">
+            <label for="nombre_tarjeta">Nombre en la Tarjeta</label>
+            <input type="text" class="form-control" id="nombre_tarjeta" name="nombre_tarjeta" placeholder="Ingrese el nombre en la tarjeta">
+          </div>
+          <div class="form-group">
+            <label for="fecha_vencimiento">Fecha de Vencimiento</label>
+            <input type="text" class="form-control" id="fecha_vencimiento" name="fecha_vencimiento" placeholder="MM/AA">
+          </div>
+          <div class="form-group">
+            <label for="cvv">CVV</label>
+            <input type="text" class="form-control" id="cvv" name="cvv" placeholder="Ingrese el código de seguridad">
+          </div>
+          <div style="display: flex; justify-content: center;">
+            <button type="submit" class="btn btn-primary" style="margin-top: 1rem;">Realizar Pago</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+  
+    
+
+
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha2/js/bootstrap.bundle.min.js"></script>
+  <footer style="margin-bottom: -10px;">
+    <div class="footer-container">
+      <div class="footer-logo">
+      </div>
+      <nav class="footer-links">
+        <a href="#">Inicio</a>
+        <a href="#">Acerca de</a>
+        <a href="#">Contacto</a>
+      </nav>
+      <div class="footer-social">
+      </div>
+    </div>
+  </footer>
+  
+
+
+
+</body>
+</html>
